@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@theme{
+    --color-background:#FFFFFF;
+    --color-primary:#1A1C1C;
+    --color-secondary:#884C30;
+    --color-p:#5F5E5E;
+}
+
+@layer base{
+    body{
+    background-color:var(--color-background);
+    color:var(--color-primary);
+}
+}
+@utility row{
+    @apply flex items-center
+}
+@utility headercomponent{
+    @apply  hover:text-black hover:underline decoration-secondary underline-offset-8 decoration-2
+}
