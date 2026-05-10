@@ -1,0 +1,68 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#0B0B0B"/>
+
+  <!-- Glow Background -->
+  <circle cx="600" cy="400" r="260" fill="url(#glow)" opacity="0.25"/>
+
+  <!-- Circuit Lines -->
+  <g stroke="#FF7A00" stroke-width="2" opacity="0.5">
+    <path d="M100 150 H350 V250 H500"/>
+    <path d="M200 650 H450 V550 H520"/>
+    <path d="M1100 200 H850 V300 H700"/>
+    <path d="M1050 600 H800 V500 H680"/>
+    <path d="M600 100 V250"/>
+    <path d="M600 700 V550"/>
+  </g>
+
+  <!-- Small Circuit Nodes -->
+  <g fill="#FF7A00">
+    <circle cx="350" cy="250" r="6"/>
+    <circle cx="450" cy="550" r="6"/>
+    <circle cx="850" cy="300" r="6"/>
+    <circle cx="800" cy="500" r="6"/>
+  </g>
+
+  <!-- GPU Chip -->
+  <rect x="400" y="220" width="400" height="360" rx="28" fill="#121212" stroke="#2B2B2B" stroke-width="6"/>
+
+  <!-- Inner Chip -->
+  <rect x="470" y="290" width="260" height="220" rx="18" fill="#181818" stroke="#FF7A00" stroke-width="4"/>
+
+  <!-- Chip Glow -->
+  <rect x="470" y="290" width="260" height="220" rx="18" fill="url(#chipGlow)" opacity="0.35"/>
+
+  <!-- GPU Text -->
+  <text x="600" y="390" text-anchor="middle" fill="white" font-size="72" font-family="Arial" font-weight="700">
+    GPU
+  </text>
+
+  <text x="600" y="440" text-anchor="middle" fill="#A0A0A0" font-size="24" font-family="Arial">
+    ARCHITECTURE
+  </text>
+
+  <!-- Pins -->
+  <g fill="#FF7A00">
+    <rect x="450" y="320" width="10" height="20"/>
+    <rect x="450" y="360" width="10" height="20"/>
+    <rect x="450" y="400" width="10" height="20"/>
+    <rect x="450" y="440" width="10" height="20"/>
+
+    <rect x="740" y="320" width="10" height="20"/>
+    <rect x="740" y="360" width="10" height="20"/>
+    <rect x="740" y="400" width="10" height="20"/>
+    <rect x="740" y="440" width="10" height="20"/>
+  </g>
+
+  <!-- Gradients -->
+  <defs>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 400) rotate(90) scale(260)">
+      <stop stop-color="#FF7A00"/>
+      <stop offset="1" stop-color="#FF7A00" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="chipGlow" x1="470" y1="290" x2="730" y2="510" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF7A00"/>
+      <stop offset="1" stop-color="#FF7A00" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>
