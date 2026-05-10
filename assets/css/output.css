@@ -277,6 +277,9 @@
   .stroke-secondary {
     stroke: var(--color-secondary);
   }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
@@ -365,8 +368,14 @@
   .decoration-secondary {
     text-decoration-color: var(--color-secondary);
   }
+  .decoration-1 {
+    text-decoration-thickness: 1px;
+  }
   .decoration-2 {
     text-decoration-thickness: 2px;
+  }
+  .underline-offset-4 {
+    text-underline-offset: 4px;
   }
   .underline-offset-8 {
     text-underline-offset: 8px;
@@ -388,6 +397,12 @@
       margin-inline: auto;
     }
   }
+  .md\:row {
+    @media (width >= 48rem) {
+      display: flex;
+      align-items: center;
+    }
+  }
   .md\:flex {
     @media (width >= 48rem) {
       display: flex;
@@ -396,6 +411,27 @@
   .md\:hidden {
     @media (width >= 48rem) {
       display: none;
+    }
+  }
+  .md\:py-4 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 4);
+    }
+  }
+  .md\:text-5xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
+    }
+  }
+  .md\:text-p {
+    @media (width >= 48rem) {
+      color: var(--color-p);
+    }
+  }
+  .md\:underline-offset-8 {
+    @media (width >= 48rem) {
+      text-underline-offset: 8px;
     }
   }
 }
