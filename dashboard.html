@@ -29,8 +29,9 @@
 
 
     </header>
-<main>
-    <section class="flex gap-12">
+
+    
+<section class="flex gap-12">
 <aside class=" hidden md:block min-h-[calc(100vh-80px)] bg-[#F3F3F3] min-w-64 relative">
     <div class="px-6 ">
     <a href="" class="flex gap-3 headercomponent"><img src="assets/css/dashboard/aside/dashboard.svg" alt="">Dashboard</a>
@@ -45,14 +46,15 @@
     </div>
 </aside>
 
+<main class="flex-1 pr-12">
 
-<div class="flex-1 pr-12">
+<div class="pb-5.75" >
     <div class="px-12 py-12">
     <h1 class="md:text-5xl font-bold">Welcome, Julian.</h1>
     <p class="text-lg md:text-lg text-p pt-2">Your curated studio workspace and performance metrics.</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-5 gap-4 px-12 ">
-        <!-- Loyalty balance -->
+        
         <div class="md:col-span-2 bg-white  ">
             <div class="pt-8">
           <p class="text-[10px] tracking-widest ">LOYALTY BALANCE</p>
@@ -66,7 +68,7 @@
           <p class="text-xs text-[#E4E2E1] pt-3">2,550 points until next tier reward</p>
         </div>
 
-        <!-- Studio collection -->
+       
         <div class="md:col-span-3 bg-[url(/assets/css/dashboard/loyality/mouse.svg)] bg-cover bg-center relative h-48 rounded-lg">
           <div class="absolute inset-0  from-black/40 "></div>
           <div class="absolute inset-0 p-6 flex flex-col justify-end">
@@ -79,14 +81,96 @@
 
 </div>
 
+  <div class="bg-[#F3F3F3] rounded-3xl p-10 ">
 
+  
+    <div class="flex items-center justify-between mb-8">
 
+        <h2 class="text-4xl font-bold">
+            Recent Order
+        </h2>
 
-</section>
+        <a href="#" class="text-secondary font-bold">
+            View All Orders
+        </a>
 
+    </div>
+
+    
+    <table class="w-full border-separate border-spacing-y-6">
+
+        <thead>
+            <tr class="text-left text-sm uppercase tracking-[2px] text-p">
+
+                <th>Product</th>
+                <th>Order ID</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th class="text-right">Amount</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr class="bg-transparent">
+
+              
+                <td>
+                    <div class="flex items-center gap-4">
+
+                        <img
+                            src="assets/css/dashboard/order/pc.svg"
+                            class="w-20 h-20 rounded-2xl object-cover"
+                        >
+
+                        <div>
+
+                            <h3 class="font-bold text-2xl">
+                                Custom Workstation Build
+                            </h3>
+
+                            <p class="text-p">
+                                Titanium Edition / 128GB RAM
+                            </p>
+
+                        </div>
+
+                    </div>
+                </td>
+
+            
+                <td class="font-medium text-xl">
+                    #MSN-8842-CW
+                </td>
+
+                
+                <td class="text-p text-lg">
+                    Oct 24, 2023
+                </td>
+
+                
+                <td>
+                    <span class="bg-[#D7E5DF] text-[#0C7A67] px-4 py-2 rounded-full text-sm font-bold">
+                        IN PRODUCTION
+                    </span>
+                </td>
+
+              
+                <td class="text-right font-bold text-3xl">
+                    $4,850.00
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
 </main>
 
-
+</section>
 
 
 <footer class="border-t border-border px-6 md:px-10 py-10 bg-[#F3F3F3]">
