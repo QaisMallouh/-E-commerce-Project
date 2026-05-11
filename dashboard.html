@@ -30,7 +30,8 @@
 
     </header>
 <main>
-<aside class=" hidden md:block min-h-[calc(100vh-80px)] bg-[#F3F3F3] max-w-64 relative">
+    <section class="flex gap-12">
+<aside class=" hidden md:block min-h-[calc(100vh-80px)] bg-[#F3F3F3] min-w-64 relative">
     <div class="px-6 ">
     <a href="" class="flex gap-3 headercomponent"><img src="assets/css/dashboard/aside/dashboard.svg" alt="">Dashboard</a>
     <a href="" class="flex gap-3 pt-4 headercomponent"><img src="assets/css/dashboard/aside/orders.svg" alt="">Orders</a>
@@ -45,11 +46,43 @@
 </aside>
 
 
+<div class="flex-1 pr-12">
+    <div class="px-12 py-12">
+    <h1 class="md:text-5xl font-bold">Welcome, Julian.</h1>
+    <p class="text-lg md:text-lg text-p pt-2">Your curated studio workspace and performance metrics.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-4 px-12 ">
+        <!-- Loyalty balance -->
+        <div class="md:col-span-2 bg-white  ">
+            <div class="pt-8">
+          <p class="text-[10px] tracking-widest ">LOYALTY BALANCE</p>
+          <p class="font-semibold text-3xl pt-4 ">12,450 <span class="text-base font-normal text-muted">PTS</span></p>
+          </div>
+          <div class="pt-12">
+            <div class="w-full bg-surface h-1.5 rounded-full overflow-hidden">
+              <div class="bg-secondary h-full rounded-full" style="width: 72%"></div>
+            </div>
+          </div>
+          <p class="text-xs text-[#E4E2E1] pt-3">2,550 points until next tier reward</p>
+        </div>
+
+        <!-- Studio collection -->
+        <div class="md:col-span-3 bg-[url(/assets/css/dashboard/loyality/mouse.svg)] bg-cover bg-center relative h-48 rounded-lg">
+          <div class="absolute inset-0  from-black/40 "></div>
+          <div class="absolute inset-0 p-6 flex flex-col justify-end">
+            <p class="text-[10px] tracking-widest text-white mb-1">STUDIO COLLECTION</p>
+            <h3 class="text-white text-xl font-bold mb-2">The 2024 Design Hardware Guide</h3>
+            <a href="html_body.html" class="text-white text-xs inline-flex items-center gap-1 hover:gap-2 transition-all">Explore New Arrivals →</a>
+          </div>
+        </div>
+      </div>
+
+</div>
 
 
 
 
-
+</section>
 
 </main>
 
