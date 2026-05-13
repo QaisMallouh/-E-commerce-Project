@@ -223,6 +223,9 @@
   .left-10 {
     left: calc(var(--spacing) * 10);
   }
+  .col-span-2 {
+    grid-column: span 2 / span 2;
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -237,6 +240,9 @@
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
   }
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
@@ -272,11 +278,17 @@
   .h-1\.5 {
     height: calc(var(--spacing) * 1.5);
   }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
   .h-10 {
     height: calc(var(--spacing) * 10);
+  }
+  .h-16 {
+    height: calc(var(--spacing) * 16);
   }
   .h-20 {
     height: calc(var(--spacing) * 20);
@@ -299,6 +311,9 @@
   .min-h-\[calc\(100vh-80px\)\] {
     min-height: calc(100vh - 80px);
   }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
@@ -307,6 +322,9 @@
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
+  }
+  .w-16 {
+    width: calc(var(--spacing) * 16);
   }
   .w-20 {
     width: calc(var(--spacing) * 20);
@@ -343,6 +361,12 @@
   }
   .flex-1 {
     flex: 1;
+  }
+  .flex-shrink {
+    flex-shrink: 1;
+  }
+  .flex-shrink-0 {
+    flex-shrink: 0;
   }
   .table-fixed {
     table-layout: fixed;
@@ -451,6 +475,9 @@
   .overflow-x-auto {
     overflow-x: auto;
   }
+  .rounded {
+    border-radius: 0.25rem;
+  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -489,11 +516,23 @@
   .border-\[\#1A1A1A\] {
     border-color: #1A1A1A;
   }
+  .border-\[\#5A7ADA\] {
+    border-color: #5A7ADA;
+  }
   .border-\[\#F3F3F3\] {
     border-color: #F3F3F3;
   }
   .border-secondary {
     border-color: var(--color-secondary);
+  }
+  .border-white {
+    border-color: var(--color-white);
+  }
+  .bg-\[\#1A2A5A\] {
+    background-color: #1A2A5A;
+  }
+  .bg-\[\#3A5ABA\]\/50 {
+    background-color: color-mix(in oklab, #3A5ABA 50%, transparent);
   }
   .bg-\[\#D7E5DF\] {
     background-color: #D7E5DF;
@@ -650,6 +689,9 @@
   .pr-12 {
     padding-right: calc(var(--spacing) * 12);
   }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
+  }
   .pb-3 {
     padding-bottom: calc(var(--spacing) * 3);
   }
@@ -664,6 +706,9 @@
   }
   .pb-8 {
     padding-bottom: calc(var(--spacing) * 8);
+  }
+  .pb-12 {
+    padding-bottom: calc(var(--spacing) * 12);
   }
   .pb-\[315\.45px\] {
     padding-bottom: 315.45px;
@@ -954,6 +999,11 @@
   .md\:grid-cols-5 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+  }
+  .md\:px-6 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 6);
     }
   }
   .md\:px-10 {
