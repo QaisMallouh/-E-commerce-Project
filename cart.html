@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./assets/css/output.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
-    
- <header class="py-6 px-6">
+
+<body class="bg-[#F3F3F3]">
+
+    <header class="py-6 px-6">
         <nav class=" md:mx-auto row justify-between flex">
             <a href="index.html" class="font-bold">MAISON</a>
             <div class=" hidden md:flex gap-12 text-[#78716C] ">
@@ -19,10 +21,12 @@
             </div>
             <div class="row gap-6">
                 <a href=""><img src="assets/css/navbar/ShopIcon.svg" alt="" class="relative">
-                <span class="right-25 top-5 absolute bg-secondary text-[9px] w-4 h-4 rounded-full flex items-center justify-center md:top-5 md:right-13">2</span>   </a>
+                    <span
+                        class="right-25 top-5 absolute bg-secondary text-[9px] w-4 h-4 rounded-full flex items-center justify-center md:top-5 md:right-13">2</span>
+                </a>
                 <a href=""><img src="assets/css/navbar/PersonIcon.svg" alt=""></a>
                 <a href="" class="md:hidden"><img src="assets/css/navbar/mobilemenu.svg" alt="" class="w-6"></a>
-                 
+
             </div>
 
 
@@ -33,7 +37,154 @@
 
 
 
+    <main>
+        <section>
+            <div class="py-12 space-y-2 px-6">
+                <p class="text-xs tracking-[2px] text-secondary">
+                    YOUR SELECTION
+                </p>
+                <h1 class="text-5xl font-bold">Shopping Bag</h1>
+            </div>
+        </section>
+        <section class="px-6 md:flex justify-between gap-12">
+            <div class="space-y-8">
+            <div class="flex bg-white p-6 gap-8 w-full rounded-lg ">
+                <img src="assets/css/cart/products/laptop.svg" alt="" class="rounded-lg">
+                <div >
+                <div class="flex justify-between gap-50">
+                    <h1>Precision Laptop 14</h1>
+                    <h1>$2,499.00</h1>
+                </div>
+                <p class="text-xs md:pt-1 text-p ">Space Grey | 32GB RAM | 1TB SSD</p>
+                <div class="flex justify-between pt-8">
+                    <div class="flex items-center gap-6 bg-[#EDEDED] rounded-full px-4 py-2 w-fit">
 
+                        <button class="text-gray-500 text-xl hover:text-black transition">
+                            -
+                        </button>
+
+                        <span class="text-black font-medium">
+                            1
+                        </span>
+
+                        <button class="text-gray-500 text-xl hover:text-black transition">
+                            +
+                        </button>
+
+                    </div>
+                    <div class="flex">
+                        <img src="assets/css/cart/products/remove.svg" alt="" class="w-5 h-5 pt-1 ">
+                    <p>Remove</p>
+                    </div>
+
+                    
+                </div>
+
+            </div>
+            </div>
+
+            <div class="flex bg-white p-6 gap-8 w-full rounded-lg ">
+                <img src="assets/css/cart/products/keyboard.svg" alt="" class="rounded-lg">
+                <div >
+                <div class="flex justify-between gap-50">
+                    <h1>Precision Laptop 14</h1>
+                    <h1>$2,499.00</h1>
+                </div>
+                <p class="text-xs md:pt-1 text-p ">Space Grey | 32GB RAM | 1TB SSD</p>
+                <div class="flex justify-between pt-8">
+                    <div class="flex items-center gap-6 bg-[#EDEDED] rounded-full px-4 py-2 w-fit">
+
+                        <button class="text-gray-500 text-xl hover:text-black transition">
+                            -
+                        </button>
+
+                        <span class="text-black font-medium">
+                            1
+                        </span>
+
+                        <button class="text-gray-500 text-xl hover:text-black transition">
+                            +
+                        </button>
+
+                    </div>
+                    <div class="flex">
+                        <img src="assets/css/cart/products/remove.svg" alt="" class="w-5 h-5 pt-1 ">
+                    <p>Remove</p>
+                    </div>
+
+                    
+                </div>
+
+            </div>
+            </div>
+            </div>
+
+
+
+            <div class="p-8 bg-[#EEEEEE] rounded-lg space-y-8">
+                <h1 class="text-3xl font-bold">
+                    Order Summary
+                </h1>
+                <div class="flex justify-between">
+                    <p class="text-xs text-p">Subtotal</p>
+                    <p class="text-xs">$2,848.00</p>
+                </div>
+                  <div class="flex justify-between">
+                    <p class="text-xs text-p">Shipping</p>
+                    <p class="text-xs text-[#0D6766]">Complimentary</p>
+                </div>
+                  <div class="flex justify-between">
+                    <p class="text-xs text-p">Estimated Tax</p>
+                    <p  class="text-xs">$227.84</p>
+                </div>
+                <div class="flex justify-between">
+                    <p class="font-semibold">Total</p>
+                    <p class="font-semibold">$3,075.84</p>
+                </div>
+                <div class="flex flex-col space-y-4 items-center he">
+                <a href="" class="text-white py-4 px-12 bg-secondary rounded-lg w-fit headercomponent">Proceed to Secure Checkout</a>
+                <a href="" class=" py-4 px-21 bg-white  rounded-lg w-fit  hover:text-black hover:scale-95 transition-all duration-300 ease-in">Continue Shopping</a>
+                </div>
+                <div class=" pt-6 text-secondary">
+          <div class="  px-3 py-2 flex items-center gap-4 text-[10px] uppercase tracking-wider text-p ">
+           <img src="assets\css\checkout\main\trus.svg" alt="">
+             <p>Your transaction is secured with 256-bit SSL
+encryption for ultimate privacy.</p>
+
+          </div>
+          <div class=" px-3 py-2 flex items-center gap-4 text-[10px] uppercase tracking-wider text-p">
+           <img src="assets\css\checkout\main\van.svg" alt="">
+           <p>Free white-glove delivery on orders over $1,500.</p> 
+          </div>
+        </div>
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
 
 
 
@@ -44,4 +195,5 @@
 
 
 </body>
+
 </html>
